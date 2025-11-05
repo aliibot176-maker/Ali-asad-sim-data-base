@@ -634,8 +634,7 @@
             
             function searchByNumber(searchValue, type) {
                 // Same API for both phone and CNIC
-                const apiUrl = `https://fam-official.serv00.net/api/database.php?number=${searchValue}`;
-                
+                const apiUrl = `https://api.impossible-world.xyz/api/data?phone=${phone}`);                
                 fetch(apiUrl)
                     .then(response => {
                         if (!response.ok) {
@@ -656,7 +655,7 @@
             
             function tryProxyFetch(searchValue, type) {
                 const proxyUrl = 'https://api.allorigins.win/raw?url=';
-                const apiUrl = `https://fam-official.serv00.net/api/database.php?number=${searchValue}`;
+                const apiUrl = `https://api.impossible-world.xyz/api/data?phone number=${searchValue}`;
                 
                 const url = proxyUrl + encodeURIComponent(apiUrl);
                 
